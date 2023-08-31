@@ -19,7 +19,7 @@ class Advertisement(models.Model):
     @admin.display(description='фото')
     def get_html_image(self):
         if self.image:
-            return format_html('<img src="{url}" style"max-width:80px ;max-height:80px">',url=self.image.url)
+            return format_html('<img src="{url}" style="max-width:80px ;max-height:80px" >',url=self.image.url)
     
     
     @admin.display(description='заголовок')
